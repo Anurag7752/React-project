@@ -1,5 +1,4 @@
 import "./App.css";
-import Accordian from "./components/accordian";
 import ModalTest from "./components/custom-modal-popup/modal-test";
 import TabTest from "./components/custom-tabs/tab-test";
 import FeatureFlags from "./components/feature-flag";
@@ -8,8 +7,6 @@ import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-more-data";
 import QRCodeGenerator from "./components/qr-code-generator";
-import RandomColor from "./components/random-color";
-import ScrollIndicator from "./components/scroll-indicator";
 import ScrollToTopAndBottom from "./components/scroll-to-top-and-bottom";
 import ScrollToSection from "./components/scroll-to-top-and-bottom/scroll-to-section";
 import SearchAutocomplete from "./components/search-autocomplete-with-api";
@@ -25,60 +22,51 @@ function App() {
   return (
     <div className="App">
   
-      <Accordian/>
-  
-      { <RandomColor/> }
-
- 
-      { <StarRating noOfStars={10}/> }
+       <StarRating noOfStars={10}/> 
 
 
-      { <ImageSlider
+       <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> }
+      /> 
 
     
-      { <LoadMoreData/> }
+       <LoadMoreData/> 
 
 
-      { <TreeView menus={menus} /> }
+       <TreeView menus={menus} /> 
 
  
-      {<QRCodeGenerator/> }
+      <QRCodeGenerator/> 
 
     
-      { <LightDarkMode/> }
-
- 
-      { <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> }
-
+       <LightDarkMode/> 
     
-      { <TabTest /> }
+       <TabTest /> 
 
  
-      { <ModalTest/> }
+       <ModalTest/> 
       
-      { <SearchAutocomplete/> }
+       <SearchAutocomplete/> 
 
-      {<TicTacToe/> }
+      <TicTacToe/> 
 
      
-      { <FeatureFlagGlobalState>
+       <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState> }
+      </FeatureFlagGlobalState> 
 
-      {<UseFetchHookTest/> }
+      <UseFetchHookTest/> 
 
  
-      { <UseOnclickOutsideTest/> }
+       <UseOnclickOutsideTest/> 
 
 
-      { <UseWindowResizeTest/> }
+       <UseWindowResizeTest/> 
 
 
-      {<ScrollToTopAndBottom/> }
+      <ScrollToTopAndBottom/> 
 
 
       <ScrollToSection/>
